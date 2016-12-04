@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.chewshwu.myproject.Detail">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="My Project"
+        android:id="@+id/tvResult"
+        android:textSize="20dp"
+        android:textColor="#1b0754"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Project Name :"
+        android:id="@+id/tvNameN"
+        android:textSize="16dp"
+        android:textColor="#1e043f"
+        android:layout_below="@+id/tvResult"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etName"
+        android:textSize="16dp"
+        android:layout_below="@+id/tvNameN"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type :"
+        android:id="@+id/tvTypeN"
+        android:textSize="16dp"
+        android:textColor="#1e043f"
+        android:layout_below="@+id/etName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etType"
+        android:textSize="16dp"
+        android:layout_below="@+id/tvTypeN"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="type"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Date :"
+        android:id="@+id/tvStartDateN"
+        android:textSize="16dp"
+        android:textColor="#1e043f"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etType" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etStartDate"
+        android:textSize="16dp"
+        android:hint="Start Date"
+        android:layout_below="@+id/tvStartDateN"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish Date :"
+        android:id="@+id/tvFinishDateN"
+        android:textSize="16dp"
+        android:textColor="#1e043f"
+        android:layout_below="@+id/etStartDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etFinishDate"
+        android:textSize="16dp"
+        android:hint="Finish Date"
+        android:layout_below="@+id/tvFinishDateN"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Number of Milestone :"
+        android:id="@+id/tvNoOfMilestoneN"
+        android:textSize="16dp"
+        android:textColor="#1e043f"
+        android:layout_below="@+id/etFinishDate" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etNoOfMilestone"
+        android:textSize="16dp"
+        android:hint="no of milestone"
+        android:layout_alignTop="@+id/tvNoOfMilestoneN"
+        android:layout_alignLeft="@+id/etComplete"
+        android:layout_alignStart="@+id/etComplete"
+        android:layout_alignRight="@+id/etFinishDate"
+        android:layout_alignEnd="@+id/etFinishDate"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Milestone :"
+        android:id="@+id/tvCurMilestoneN"
+        android:textSize="16dp"
+        android:textColor="#1e043f"
+        android:layout_below="@+id/etNoOfMilestone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCurMilestone"
+        android:textSize="16dp"
+        android:hint="Current Milestone"
+        android:layout_alignTop="@+id/tvCurMilestoneN"
+        android:layout_toRightOf="@+id/tvCurMilestoneN"
+        android:layout_alignRight="@+id/etFinishDate"
+        android:layout_alignEnd="@+id/etFinishDate"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Percentage of completion :"
+        android:id="@+id/tvCompleteN"
+        android:textSize="16dp"
+        android:textColor="#1e043f"
+        android:layout_below="@+id/etCurMilestone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etComplete"
+        android:textSize="15dp"
+        android:height="40dp"
+        android:layout_below="@+id/etCurMilestone"
+        android:layout_toRightOf="@+id/tvNoOfMilestoneN"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCreatedOn"
+        android:hint="Created on"
+        android:layout_below="@+id/etComplete"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:id="@+id/bEdit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/bDelete"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

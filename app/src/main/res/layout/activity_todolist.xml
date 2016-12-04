@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvToDoList"
+        android:text="To Do List"
+        android:layout_gravity="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@color/TitleTextView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bAddDo"
+            android:text="Add"
+            android:layout_width="53dp"
+            android:layout_height="56dp"
+            android:onClick="AddDoItem"/>
+        <EditText
+            android:id="@+id/etDoName"
+            android:hint="Add a to-do-task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <Button
+            android:text="Completed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bDoComplete"
+            android:onClick="DoItemCompleted"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/view4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

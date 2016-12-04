@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp">
+
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ProjectName"
+        android:height="?attr/dialogPreferredPadding"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/ListTitle" />
+
+    <TextView
+        android:id="@+id/tvStartDateN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Date"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvFinishDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish Date"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/tvStartDateN"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completion"
+        android:id="@+id/tvCompletion"
+        android:layout_below="@+id/tvFinishDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="75dp">
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="120dp"
+        android:id="@+id/tvName"
+        android:text="Prabeesh"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="120dp"
+        android:id="@+id/tvTypeN"
+        android:text="Prabeesh"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="120dp"
+        android:id="@+id/tvStartDate"
+        android:text="Prabeesh"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_toRightOf="@+id/tvTypeN" />
+
+
+
+</RelativeLayout>
+-->
